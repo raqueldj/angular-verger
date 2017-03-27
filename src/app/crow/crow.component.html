@@ -1,1 +1,10 @@
 <div>Crow position is: {{crowPosition}}</div>
+
+Crow is at the position: {{crowPosition}} / {{nbCases}}
+
+<div class="cases">
+    <div *ngFor='let i of cases; let index = index;' class='case' style="border:1px solid black" [style.backgroundColor]='couleurCase(index)'>
+        <div *ngIf='crowPosition === index'><img src="assets/crow.png" alt="crow" width = '50em' height = '50em'></div>
+    </div>
+
+</div>

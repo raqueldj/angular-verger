@@ -5,9 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: './application.component.html',
   styleUrls: ['./application.component.css']
 })
+
+
+
 export class ApplicationComponent {
-  gameState= {
-    crowPosition: 6,
-    trees: 4
-  }
+
 }

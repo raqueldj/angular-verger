@@ -10,7 +10,7 @@ export class DieComponent {
   @Output() diceRolled : EventEmitter<number> = new EventEmitter();
 
   dieRolled() {
-    let result = Math.ceil(this.nbFaces * Math.random());
+    let result = Math.floor(this.nbFaces * Math.random());
     this.diceRolled.emit(result);
   }
 
