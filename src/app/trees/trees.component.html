@@ -1,3 +1,2 @@
-<p>
-  trees works!
-</p>
+<app-tree *ngFor='let nbFruits of trees; let i = index;' [nbFruits]='nbFruits' [chooseTree]='chooseTree' (chosen)='onChose(i)'>
+</app-tree> 

@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   dieResult: number = 1;
+  onChoose() { return true };
+  trees = [4, 4, 4, 4];
 }

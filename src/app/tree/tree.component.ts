@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-tree',
   templateUrl: './tree.component.html',
   styleUrls: ['./tree.component.css']
 })
-export class TreeComponent implements OnInit {
+export class TreeComponent {
+  @Input() nbFruits: number;
 
-  constructor() { }
+  @Input() chooseTree: boolean;
+  @Output() chosen: EventEmitter<null> = new EventEmitter();
 
-  ngOnInit() {
+  onChoose() {
+    this.chosen.emit();
   }
 
 }
